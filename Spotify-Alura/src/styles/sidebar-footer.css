@@ -239,11 +239,8 @@ body {
   flex-shrink: 0;
 }
 
-@media (min-height: 1080px) {
+@media (min-height: 900px) {
   .library {
     height: 70vh;
-  }
-  .disclaimer-premium{
-    margin: 3vh 5px;
   }
 }
