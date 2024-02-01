@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Spotify - Web player</title>
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="src/styles/main-content.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+      integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <nav class="sidebar__navigation">
+        <div class="logo">
+          <a href="">
+            <img src="src/assets/icons/logo-spotify.png" alt="Logo" />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="">
+              <span class="fa fa-home"></span>
+              <span>Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="fa fa-search"></span>
+              <span>Buscar</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="library">
+        <div class="library__content">
+          <button class="library__button">
+            <span class="fa fas fa-book"></span>
+            <span>Sua Biblioteca</span>
+          </button>
+          <span class="fa fa-plus"></span>
+        </div>
+        <div class="library__section">
+          <section class="section-playlist">
+            <div class="section-playlist__content">
+              <span class="text title">Crie sua primeira playlist</span>
+              <span class="text subtitle">É fácil, vamos te ajudar.</span>
+              <button class="section-playlist__button">Criar playlist</button>
+            </div>
+          </section>
+          <section class="section-podcast">
+            <div class="section-podcast__content">
+              <span class="text title">Que tal seguir um podcast novo?</span>
+              <span class="text subtitle"
+                >Avisaremos você sobre novos episódios.</span
+              >
+              <button class="section-podcast__button">Explore podcasts</button>
+            </div>
+          </section>
+        </div>
+        <div class="links">
+          <a href="">Legal</a>
+          <a href="">Centro de Privacidade</a>
+          <a href="">Política de privacidade</a>
+          <a href="">Cookies</a>
+          <a href="">Sobre anúncios</a>
+          <a href="">Acessibilidade</a>
+          <a href="">Notice at Collection</a>
+          <a href=""
+            >Your Privacy Choices
+            <span class="links__button"
+              ><img
+                src="src/assets/icons/trocar.png"
+                alt="botao-trocar" /></span
+          ></a>
+          <a href="">Cookies</a>
+        </div>
+        <div class="languages">
+          <button class="languages__button">
+            <span class="fa fa-globe"></span>
+            <span class="text">Português do Brasil</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-container">
+      <nav class="header__navigation">
+        <div class="navigation">
+          <button class="arrow-left">
+            <img src="src/assets/icons/small-left.png" alt="seta_esquerda">
+          </button>
+          <button class="arrow-right">
+            <img src="src/assets/icons/small-right.png" alt="seta_direita">
+          </button>
+          <div class="header__search">
+            <img src="src/assets/icons/search.png" alt="">
+            <input id="search-input" type="text" placeholder="O que você quer ouvir?" maxlength="800">
+          </div>
+        </div>
+        <div class="header__login">
+            <button class="subscribe">Inscreva-se</button>
+            <button class="login">Entrar</button>
+          </div>
+      </nav>
+    </main>
+
+    <footer class="disclaimer-premium">
+      <div class="text">
+        <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+        <p class="disclaimer-premium__subtitle">
+          Inscreva-se para curtir música ilimitada e podcasts só com alguns
+          anúncios. Não precisa de cartão de crédito.
+        </p>
+      </div>
+      <div class="button">
+        <button type="button">Inscreva-se grátis</button>
+      </div>
+    </footer>
+  </body>
+</html>
