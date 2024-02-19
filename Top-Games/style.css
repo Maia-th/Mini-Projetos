@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Times New Roman", Times, serif, Courier, monospace;
+}
+
+body {
+  background-image: url(img/controle.jpg);
+}
+
+aside {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(62, 63, 65);
+}
+
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu nav ul li a {
+  display: flex;
+  margin-left: 50px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+  color: azure;
+}
+
+.menu nav ul li a:hover {
+  color: #ffffff;
+  background-color: rgb(4, 78, 4);
+  transition: all ease 0.8s;
+}
+
+.mobile-icon {
+  position: fixed;
+  z-index: 10;
+}
+
+.mobile-icon button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-mobile {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.menu-mobile .m-open {
+  width: 50vh;
+  height: 0vh;
+  background: gray;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: all ease 1s;
+}
+
+.m-open ul {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-open ul li a {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 200;
+  color: azure;
+}
+
+h1 {
+  color: rgb(7, 248, 7);
+  text-align: center;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: green;
+  text-align: center;
+  background-color: azure;
+  border-style: outset;
+  border-width: 2px;
+  border-color: white;
+}
+
+.p1 {
+  color: azure;
+  background-color: rgb(4, 78, 4);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 2%;
+}
+
+.p2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 20px;
+  color: green;
+  border-style: outset;
+  border-width: 2px;
+  background-color: azure;
+  border-color: white;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conjuntos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conj1,
+.conj2,
+.conj3,
+.conj4,
+.conj5 {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 969px) {
+  h2 {
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .p1 {
+    font-size: 1rem;
+  }
+  .p2 {
+    font-size: 1.2rem;
+  }
+  .menu nav ul li a {
+    margin-left: 15px;
+  }
+  .home {
+    height: 600px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  aside {
+    display: flex;
+  }
+  h2 {
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .p1 {
+    font-size: 0.9rem;
+  }
+  .p2 {
+    font-size: 0.9rem;
+  }
+  .conj1,
+  .conj2,
+  .conj3,
+  .conj4,
+  .conj5 {
+    height: 360;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu {
+    display: none;
+  }
+  aside {
+    display: flex;
+  }
+  h2 {
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .p1 {
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+  .p2 {
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+  .conj1,
+  .conj2,
+  .conj3,
+  .conj4,
+  .conj5 {
+    height: 300;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
+
+  .home {
+    margin-left: 50px;
+  }
+}
