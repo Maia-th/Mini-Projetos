@@ -2,3 +2,5 @@
 Projeto Pessoal !
 ## Tecnologias utilizadas 
 ...
+
+⚠️ Em Desenvolvimento!
