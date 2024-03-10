@@ -4,4 +4,5 @@ Projeto criado durante o intensivão JS do canal Hashtag.
 
 <img src="https://skillicons.dev/icons?i=js" />
 
+## Prints do Deploy
 ⚠️ Em Desenvolvimento!
