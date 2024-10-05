@@ -1,0 +1,81 @@
+@media (min-width: 450px) and (max-width: 664px) {
+  header .fundo {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+  }
+  header .mosquito img {
+    width: 5rem;
+  }
+  header .titulo {
+    font-size: 1rem;
+  }
+  header .titulo .spanTitulo {
+    font-size: 2.3rem;
+  }
+  main .telefones {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 449px) {
+  header .fundo {
+    font-size: 0.7rem;
+    padding: 1rem;
+  }
+
+  header .mosquito {
+    display: none;
+  }
+
+  header .titulo {
+    font-size: 0.6rem;
+  }
+
+  header .titulo .spanTitulo {
+    font-size: 2rem;
+  }
+
+  header .titulo .data {
+    padding: 0.2rem;
+    width: 18rem;
+  }
+
+  header .titulo .data img {
+    width: 2rem;
+  }
+
+  header .titulo .data p {
+    font-size: 1.5rem;
+  }
+
+  main .telefones {
+    font-size: 1.3rem;
+  }
+
+  footer .redesSociais a {
+    font-size: 1rem;
+  }
+
+  main .cards .notificados,
+  main .cards .investigacao,
+  main .cards .positivos,
+  main .cards .pacientesInternados,
+  main .cards .obitosEmInvestigacao,
+  main .cards .obitosConfirmados {
+    width: 28rem;
+    
+  }
+
+  main .cards span.notificados,
+  main .cards span.investigacao,
+  main .cards span.positivos,
+  main .cards span.pacientesInternados,
+  main .cards span.obitosEmInvestigacao,
+  main .cards span.obitosConfirmados {
+    width: 5rem;
+  }
+
+  main .Geral p {
+    font-size: 1.4rem;
+  }
+}

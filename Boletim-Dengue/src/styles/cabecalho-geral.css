@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color-pagina);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+
+header .fundo {
+  display: flex;
+  background-color: var(--bg-color-cabecalho);
+  font-size: 1.4rem;
+  padding: 1.3rem 5rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+header .mosquito {
+  margin-right: 0.5rem;
+  width: 6rem;
+}
+
+header .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-dark);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+header .titulo .spanTitulo {
+  color: var(--text-color-destaque);
+  font-size: 3.5rem;
+}
+
+header .titulo .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  border: solid 0.2rem var(--text-color-destaque);
+  border-radius: 10rem;
+  width: 25rem;
+  padding: 0.5rem 0;
+}
+
+header .titulo .data img {
+  width: 2.8rem;
+}
+
+header .titulo .data .dataGif {
+  margin-left: 1rem;
+}
+
+header .titulo .data p {
+  font-size: 2rem;
+  margin-left: 0.8rem;
+  font-weight: 550;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+main p,
+main span {
+  font-size: 2rem;
+}
+
+main .Geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 1rem;
+}
+
+main .Geral .cards div  {
+  display: flex;
+  margin: 1rem;
+}
+
+main .Geral h2 {
+  color: var(--text-color-destaque);
+}

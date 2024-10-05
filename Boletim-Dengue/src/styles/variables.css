@@ -1,0 +1,28 @@
+:root {
+  /*Fontes*/
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+
+  /*Cores*/
+  --text-color: #ffffff;
+  --text-color-dark: #000000;
+  --text-color-destaque: #c7165c;
+  --text-color-telefones: #DA752E;
+  --bg-color-pagina: #f0f0f0;
+  --bg-color-aviso: rgba(0, 0, 0, 0.9);
+  --bg-color-cabecalho: #e56026;
+
+  /*Cards*/
+  --notificados-color: #5d8891;
+  --notificados-span-color: #4d747b;
+  --investigacao-color: #b56317;
+  --investigacao-span-color: #905012;
+  --positivos-color: #d9363b;
+  --positivos-span-color: #9b282d;
+  --pacientesInternados-color: #87292b;
+  --pacientesInternados-span-color: #711f23;
+  --obitosEmInvestigacao-color: #1a1a1a;
+  --obitosEmInvestigacao-span-color: #3c3c3c;
+  --obitosConfirmados-color: #737373;
+  --obitosConfirmados-span-color: #878787;
+}

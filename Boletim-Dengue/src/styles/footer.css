@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+footer .redesSociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .redesSociais .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 0.5rem;
+  border-right: solid;
+  border-color: var(--text-color-destaque);
+}
+
+footer .redesSociais a {
+  color: var(--text-color-destaque);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+footer .redesSociais .link ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer .redesSociais .link img {
+  width: 2rem;
+  margin: 0.2rem 1rem;
+}
+
+footer .redesSociais img {
+  width: 15rem;
+  margin-left: 0.5rem;
+}

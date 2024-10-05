@@ -1,0 +1,30 @@
+main .unidadesDeSaude {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+main .cards {
+  flex-direction: column; /*Exculir, quando os outros dados forem conectados*/
+}
+
+main .unidadesDeSaude .cards {
+  flex-direction: column;
+}
+
+main .unidadesDeSaude article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin: 1rem;
+}
+
+main .telefones {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 5rem 0;
+  color: var(--text-color-telefones);
+}

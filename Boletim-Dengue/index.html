@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/image/favicon.png" />
+    <title>Boletim Da Dengue</title>
+    <link rel="stylesheet" href="src/styles/variables.css" />
+    <link rel="stylesheet" href="src/styles/cards.css" />
+    <link rel="stylesheet" href="src/styles/cabecalho-geral.css" />
+    <link rel="stylesheet" href="src/styles/unidades.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
+    <link rel="stylesheet" href="src/styles/query-telas-menores.css" />
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="fundo">
+        <div class="mosquito">
+          <img src="src/image/inseto.png" alt="mosquito" />
+        </div>
+        <div>
+          <h1>ITABIRA CONTRA A DENGUE!</h1>
+          <h2>TODOS CONTRA A DENGUE!</h2>
+        </div>
+      </div>
+      <div class="titulo">
+        <h1>
+          BOLETIM EPIDEMIOLÓGICO <span class="spanTitulo">DA DENGUE</span>
+        </h1>
+        <div class="data">
+          <img src="src/image/calendario.png" alt="calendario" />
+          <p>Até <span id="DataAt"><img
+            class="dataGif"
+            src="src/image/loading-data.gif"
+            alt="carregando"
+        /></span></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="Geral">
+        <h2>GERAL</h2>
+        <div class="cards">
+          <div class="notificados">
+            <p>NOTIFICADOS:</p>
+            <span id="GeralNotif" class="notificados"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+          <div class="investigacao">
+            <p>EM INVESTIGAÇÃO:</p>
+            <span id="GeralInvet" class="investigacao"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+          <div class="positivos">
+            <p>POSITIVOS:</p>
+            <span id="GeralPosit" class="positivos"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+          <div class="pacientesInternados">
+            <p>PACIENTES INTERNADOS:</p>
+            <span id="GeralInter" class="pacientesInternados"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+          <div class="obitosEmInvestigacao">
+            <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+            <span id="GeralObitosIn" class="obitosEmInvestigacao"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+          <div class="obitosConfirmados">
+            <p>ÓBITOS CONFIRMADOS:</p>
+            <span id="GeralObitosCo" class="obitosConfirmados"><img
+              class="gif"
+              src="src/image/loading-loading-forever.gif"
+              alt="carregando"
+          /></span>
+          </div>
+        </div>
+      </section>
+      <section class="unidadesDeSaude">
+        <article class="HNSD">
+          <h2>HNSD</h2>
+          <div class="cards">
+            <div class="notificados">
+              <p>NOTIFICADOS:</p>
+              <span class="notificados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="investigacao">
+              <p>EM INVESTIGAÇÃO:</p>
+              <span class="investigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="positivos">
+              <p>POSITIVOS:</p>
+              <span class="positivos"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="pacientesInternados">
+              <p>PACIENTES INTERNADOS:</p>
+              <span class="pacientesInternados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosEmInvestigacao">
+              <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+              <span class="obitosEmInvestigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosConfirmados">
+              <p>ÓBITOS CONFIRMADOS:</p>
+              <span class="obitosConfirmados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+          </div>
+        </article>
+        <article class="HMCC">
+          <h2>HMCC</h2>
+          <div class="cards">
+            <div class="notificados">
+              <p>NOTIFICADOS:</p>
+              <span class="notificados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="investigacao">
+              <p>EM INVESTIGAÇÃO:</p>
+              <span class="investigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="positivos">
+              <p>POSITIVOS:</p>
+              <span class="positivos"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="pacientesInternados">
+              <p>PACIENTES INTERNADOS:</p>
+              <span class="pacientesInternados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosEmInvestigacao">
+              <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+              <span class="obitosEmInvestigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosConfirmados">
+              <p>ÓBITOS CONFIRMADOS:</p>
+              <span class="obitosConfirmados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+          </div>
+        </article>
+        <article class="PSMI">
+          <h2>PSMI</h2>
+          <div class="cards">
+            <div class="notificados">
+              <p>NOTIFICADOS:</p>
+              <span class="notificados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="investigacao">
+              <p>EM INVESTIGAÇÃO:</p>
+              <span class="investigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="positivos">
+              <p>POSITIVOS:</p>
+              <span class="positivos"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="pacientesInternados">
+              <p>PACIENTES INTERNADOS:</p>
+              <span class="pacientesInternados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosEmInvestigacao">
+              <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+              <span class="obitosEmInvestigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosConfirmados">
+              <p>ÓBITOS CONFIRMADOS:</p>
+              <span class="obitosConfirmados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+          </div>
+        </article>
+        <article class="POLICLÍNICA">
+          <h2>POLICLÍNICA</h2>
+          <div class="cards">
+            <div class="notificados">
+              <p>NOTIFICADOS:</p>
+              <span class="notificados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="investigacao">
+              <p>EM INVESTIGAÇÃO:</p>
+              <span class="investigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="positivos">
+              <p>POSITIVOS:</p>
+              <span class="positivos"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosEmInvestigacao">
+              <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+              <span class="obitosEmInvestigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosConfirmados">
+              <p>ÓBITOS CONFIRMADOS:</p>
+              <span class="obitosConfirmados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+          </div>
+        </article>
+        <article class="UNIDADES">
+          <h2>UNIDADES</h2>
+          <div class="cards">
+            <div class="notificados">
+              <p>NOTIFICADOS:</p>
+              <span class="notificados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="investigacao">
+              <p>EM INVESTIGAÇÃO:</p>
+              <span class="investigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="positivos">
+              <p>POSITIVOS:</p>
+              <span class="positivos"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosEmInvestigacao">
+              <p>ÓBITOS EM INVESTIGAÇÃO:</p>
+              <span class="obitosEmInvestigacao"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+            <div class="obitosConfirmados">
+              <p>ÓBITOS CONFIRMADOS:</p>
+              <span class="obitosConfirmados"
+                ><img
+                  class="gif"
+                  src="src/image/loading-loading-forever.gif"
+                  alt="carregando"
+              /></span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="telefones">
+        <h3>DISQUE DENGUE: 3839-2600 / 3839-2643</h3>
+      </div>
+    </main>
+    <footer>
+      <div class="redesSociais">
+        <div class="link">
+          <a
+            href="http://www.itabira.mg.gov.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WWW.ITABIRA.MG.GOV.BR</a
+          >
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/prefeituraitabira"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="src/image/facebook.png" alt="icone do facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/prefeitura_itabira"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="src/image/logotipo-do-instagram.png"
+                  alt="icone do instagram"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@prefeituradeitabira8624"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="src/image/youtube.png" alt="icone do youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="src/image/logotipo.png"
+          alt="logotipo da Prefeitura De Itabira"
+        />
+      </div>
+    </footer>
+    <script type="text/javascript" src="src/scripts/connection.js"></script>
+  </body>
+</html>

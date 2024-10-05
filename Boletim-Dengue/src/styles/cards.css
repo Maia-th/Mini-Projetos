@@ -1,0 +1,89 @@
+main .cards  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--text-color);
+  flex-direction: row;
+}
+
+main .cards .gif {
+  width: 2rem;
+}
+
+main .cards .notificados,
+main .cards .investigacao,
+main .cards .positivos,
+main .cards .pacientesInternados,
+main .cards .obitosEmInvestigacao,
+main .cards .obitosConfirmados {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 40rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+main .cards span.notificados,
+main .cards span.investigacao,
+main .cards span.positivos,
+main .cards span.pacientesInternados,
+main .cards span.obitosEmInvestigacao,
+main .cards span.obitosConfirmados {
+  display: inline-flex;
+  justify-content: center;
+  width: 10rem;
+  padding: 0.6rem;
+  margin: 0;
+  border-radius: 0.4rem;
+}
+
+main .notificados {
+  background-color: var(--notificados-color);
+}
+
+main span.notificados {
+  background-color: var(--notificados-span-color);
+}
+
+main .investigacao {
+  background-color: var(--investigacao-color);
+}
+
+main span.investigacao {
+  background-color: var(--investigacao-span-color);
+}
+
+main .positivos {
+  background-color: var(--positivos-color);
+}
+
+main span.positivos {
+  background-color: var(--positivos-span-color);
+}
+
+main .pacientesInternados {
+  background-color: var(--pacientesInternados-color);
+}
+
+main span.pacientesInternados {
+  background-color: var(--pacientesInternados-span-color);
+}
+
+main .obitosEmInvestigacao {
+  background-color: var(--obitosEmInvestigacao-color);
+}
+
+main span.obitosEmInvestigacao {
+  background-color: var(--obitosEmInvestigacao-span-color);
+}
+
+main .obitosConfirmados {
+  background-color: var(--obitosConfirmados-color);
+}
+
+main span.obitosConfirmados {
+  background-color: var(--obitosConfirmados-span-color);
+}
